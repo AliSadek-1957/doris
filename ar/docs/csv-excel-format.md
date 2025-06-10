@@ -1,151 +1,146 @@
-﻿# Simple Tabular Death Certificate exchange format
+# نموذج تبادل شهادات الوفاة الجدولي البسيط
 
-This is a specific format used by the [Doris Tool](https://icd.who.int/doris) as a simple tabular alternative to the [standard JSON format](json-format.md).
+هذا نموذج خاص تستخدمه أداة دوريس (https://icd.who.int/doris) كبديل جدولي بسيط لنموذج جاسن القياسي (json-format.md).
 
-This format can be used as an Excel (.xlsx) file or as a comma separated text file (.csv). 
+يمكن استخدام هذا النموذج كملف إكسيل  (.xlsx) أو كملف نصي مفصول بفواصل (.csv).
 
-## Sample Files
-You may download small sample files from here:
-### Sample Excel File
-- [Excel sample (.xlsx)](sample.xlsx)
+## ملفات العينة
+يمكنك تنزيل ملفات العينة الصغيرة من هنا:
+### نموذج ملف إكسل
+- [نموذج إكسل (.xlsx)](sample.xlsx)
 
-### Sample CSV File
-- [Comma separated text file sample (.csv)](sample.csv)
+### نموذج ملف CSV
+- [نموذج ملف نصي مفصول بفواصل (.csv)](sample.csv)
 
-Detailed descriptions of the fields are explained below:
+يُشرح أدناه وصفٌ مُفصّل للحقول:
 
-## Used Data types
+## أنواع البيانات المُستخدمة
 
-The data types used are:
+أنواع البيانات المُستخدمة هي:
 
-| Type | Description |
-| --- | --- |
-| `string` | in CSV files, alphanumeric values need to be in quotation marks `"`. |
-| `integer` | Numeric field, whole numbers allowed |
-| `boolean` | The values allowed are `true` and `false` |
-| `date` | The date field used in the certificate is using the format defined in the [W3C](https://www.w3.org/TR/NOTE-datetime). In CSV files, the date value need to be between quotation marks `"`. |
-| `durations` | Durations define the amount of intervening time in a time interval used in the certificate for the interval field. The format is defined in the [ISO_8601](https://en.wikipedia.org/wiki/ISO_8601#Durations). In CSV files, the duration value need to be insert between quotation marks `"`.|
-
-Example of date:
+| النوع | الوصف || --- | --- |
+| `string` | في ملفات CSV، يجب أن تكون القيم الأبجدية الرقمية بين علامتي اقتباس `"`. |
+| `integer` | حقل ​​رقمي، يُسمح بالأعداد الصحيحة |
+| `boolean` | القيم المسموح بها هي `true` و`false` |
+| `date` | حقل ​​التاريخ المستخدم في الشهادة يستخدم التنسيق المُحدد في [W3C](https://www.w3.org/TR/NOTE-datetime). في ملفات CSV، يجب أن تكون قيمة التاريخ بين علامتي اقتباس `"`. |
+| `durations` | تُحدد المُدد مقدار الوقت المُتخلل في فترة زمنية مُستخدمة في الشهادة لحقل الفترة. التنسيق مُحدد في [ISO_8601](https://en.wikipedia.org/wiki/ISO_8601#Durations). في ملفات CSV، يجب إدراج قيمة المدة بين علامتي الاقتباس `"`.|
+مثال على التاريخ:
 
 ```
-    Year:
-        YYYY (eg 1997)  
-    Year and month:  
-        YYYY-MM (eg 1997-07)  
-    Complete date:  
-        YYYY-MM-DD (eg 1997-07-16)  
-    Complete date plus hours and minutes:  
-        YYYY-MM-DDThh:mmTZD (eg 1997-07-16T19:20+01:00)  
-    Complete date plus hours, minutes and seconds:  
-        YYYY-MM-DDThh:mm:ssTZD (eg 1997-07-16T19:20:30+01:00)  
-    Complete date plus hours, minutes, seconds and a decimal fraction of a second  
-        YYYY-MM-DDThh:mm:ss.sTZD (eg 1997-07-16T19:20:30.45+01:00)
-where:
-     YYYY = four-digit year
-     MM   = two-digit month (01=January, etc.)
-     DD   = two-digit day of month (01 through 31)
-     hh   = two digits of hour (00 through 23) (am/pm NOT allowed)
-     mm   = two digits of minute (00 through 59)
-     ss   = two digits of second (00 through 59)
-     s    = one or more digits representing a decimal fraction of a second
-     TZD  = time zone designator (Z or +hh:mm or -hh:mm)
+السنة:
+YYYY (مثال: ١٩٩٧)
+السنة والشهر:
+YYYY-MM (مثال: ١٩٩٧-٠٧)
+التاريخ كاملاً:
+YYYY-MM-DD (مثال: ١٩٩٧-٠٧-١٦)
+التاريخ كاملاً مع الساعات والدقائق:
+YYYY-MM-DDThh:mmTZD (مثال: ١٩٩٧-٠٧-١٦T19:20+01:00)
+التاريخ كاملاً مع الساعات والدقائق والثواني:
+YYYY-MM-DDThh:mm:ssTZD (مثال: ١٩٩٧-٠٧-١٦T19:20:30+01:00)
+التاريخ كاملاً مع الساعات والدقائق والثواني وكسر عشري من الثانية
+YYYY-MM-DDThh:mm:ss.sTZD (مثال: 1997-07-16T19:20:30.45+01:00)
+حيث:
+YYYY = سنة من أربعة أرقام
+MM = شهر من رقمين (01 = يناير، إلخ.)
+DD = يوم من رقمين في الشهر (01 إلى 31)
+hh = ساعة من رقمين (00 إلى 23) (غير مسموح باستخدام صباحًا/مساءً)
+mm = دقيقة من رقمين (00 إلى 59)
+ss = ثانية من رقمين (00 إلى 59)
+s = رقم واحد أو أكثر يمثل كسرًا عشريًا من الثانية
+TZD = رمز المنطقة الزمنية (Z أو +hh:mm أو -hh:mm)
 ```
 
-Example of duration:
+مثال على المدة:
 
 ```
-The duration is represented by the format P[n]Y[n]M[n]DT[n]H[n]M[n]S, P[n]W or P<date>T<time>
-In these representations, the [n] is replaced by the value for each of the date and time elements that follow the [n]. Leading zeros are not required, but the maximum number of digits for each element should be agreed to by the communicating parties. The capital letters P, Y, M, W, D, T, H, M, and S are designators for each of the date and time elements and are not replaced.
-where:
-    P is the duration designator (for period) placed at the start of the duration representation.
-    Y is the year designator that follows the value for the number of calendar years.
-    M is the month designator that follows the value for the number of calendar months.
-    W is the week designator that follows the value for the number of weeks.
-    D is the day designator that follows the value for the number of calendar days.
-    T is the time designator that precedes the time components of the representation.
-    H is the hour designator that follows the value for the number of hours.
-    M is the minute designator that follows the value for the number of minutes.
-    S is the second designator that follows the value for the number of seconds.
+يتم تمثيل المدة بالصيغة P[n]Y[n]M[n]DT[n]H[n]M[n]S أو P[n]W أو P<date>T<time>
+في هذه التمثيلات، يُستبدل [n] بقيمة كل عنصر من عناصر التاريخ والوقت التي تلي [n]. لا يُشترط استخدام أصفار في البداية، ولكن يجب الاتفاق على الحد الأقصى لعدد الأرقام لكل عنصر بين الطرفين. الأحرف الكبيرة P، Y، M، W، D، T، H، M، وS هي مُسميات لكل عنصر من عناصر التاريخ والوقت، ولا تُستبدل.
+حيث:
+P هو مُسمي المدة (للفترة) الموضوع في بداية تمثيل المدة.
+Y هو مُسمي السنة الذي يلي قيمة عدد السنوات التقويمية.
+M هو مُسمي الشهر الذي يلي قيمة عدد الأشهر التقويمية.
+W هو مُسمي الأسبوع الذي يلي قيمة عدد الأسابيع.
+D هو مُسمي اليوم الذي يلي قيمة عدد الأيام التقويمية.
+T هو مُسمي الوقت الذي يسبق مكونات الوقت في التمثيل.
+H هو مُسمي الساعة الذي يلي قيمة عدد الساعات. M هو رمز الدقيقة الذي يلي قيمة عدد الدقائق. S هو رمز الثانية الذي يلي قيمة عدد الثواني.
+لتوضيح الغموض، "P1M" مدة شهر واحد و"PT1M" مدة دقيقة واحدة.
 
-To resolve ambiguity, "P1M" is a one-month duration and "PT1M" is a one-minute duration.
+أمثلة عملية:
+"PT10S" مدة عشر ثوانٍ
+"PT10M" مدة عشر دقائق
+"PT10H" مدة عشر ساعات
+"P5D" مدة خمسة أيام
+"P2W" مدة أسبوعين
+"P10M" مدة عشرة أشهر
+"P10Y" مدة عشر سنوات
 
-Practical examples:
-    "PT10S" is a ten seconds duration
-    "PT10M" is a ten minutes duration
-    "PT10H" is a ten hours duration
-    "P5D" is a five days duration
-    "P2W" is a two weeks duration
-    "P10M" is a ten months duration
-    "P10Y" is a ten years duration
-    "", "P" or "PT" is used for unknown interval.
+يُستخدم "" أو "P" أو "PT" لفترة زمنية غير معروفة.
+```
+```
+ملاحظة: يمكن تقديم حقول "سبب الوفاة" إما كرمز أو رابط URI أو نص. لدينا أعمدة خاصة بها. من الضروري وجود عمود واحد فقط.
 ```
 
-```
-Note: CauseOfDeath fields can be provided either as code, URI or text. we have individual columns for them. Having just one of them is necessary. 
-```
+## الوصف
 
-## Description
-
-| Attribute | Input/Output | Type | Description |
+| السمة | الإدخال/الإخراج | النوع | الوصف |
 | --- | --- | --- | --- |
-| `CertificateKey` | _input_ | `string` | Can be used to identify the certificate. |
-| `ICDVersion` | _input_ | `string` | Specify the ICD revision used for the coding of the certificate. DORIS currently supports `ICD11`  |
-| `ICDMinorVersion` | _input_ | `string` | Specify the ICD minor version used for the coding of the certificate associated to the ICD version. |
-| `Sex` | _input_ | `string` | 1: Male, 2: Female, 9: Unknown |
-| `DateBirth` | _input_ | `date` | _see date format above_ |
-| `DateDeath` | _input_ | `date` | _see date format above_ |
-| `EstimatedAge` | _input_ | `durations` | _see durations format above_ |
-| `CauseOfDeathTextA` | _input_ | `string` | Cause field A. Textual conditions.  |
-| `CauseOfDeathCodeA` | _input_ | `string` | Cause field A. Classification codes comma separated. Its allowed to use post coordination, i.e. “Stem A & Ext 1 / Stem B”.  |
-| `CauseOfDeathURIA` | _input_ | `string` | Cause field A. Classification URI comma separated (Used only for ICD-11). Its allowed to use post coordination, i.e. “Stem A & Ext 1 / Stem B”. |
-| `IntervalA` | _input_ | `durations` | Time interval from onset to death for Field A.|
-| `CauseOfDeathTextB` | _input_ | `string` | Cause field B. Textual conditions. |
-| `CauseOfDeathCodeB` | _input_ | `string` | Cause field B. Classification codes comma separated. Its allowed to use post coordination, i.e. “Stem A & Ext 1 / Stem B”. |
-| `CauseOfDeathURIB` | _input_ | `string` | Cause field B. Classification URI comma separated (Used only for ICD-11). Its allowed to use post coordination, i.e. “Stem A & Ext 1 / Stem B”. |
-| `IntervalB` | _input_ | `durations` | Time interval from onset to death for Field B. |
-| `CauseOfDeathTextC` | _input_ | `string` | Cause field C. Textual conditions. |
-| `CauseOfDeathCodeC` | _input_ | `string` | Cause field C. Classification codes comma separated. Its allowed to use post coordination, i.e. “Stem A & Ext 1 / Stem B”. |
-| `CauseOfDeathURIC` | _input_ | `string` | Cause field C. Classification URI comma separated (Used only for ICD-11). Its allowed to use post coordination, i.e. “Stem A & Ext 1 / Stem B”. |
-| `IntervalC` | _input_ | `durations` | Time interval from onset to death for Field C. |
-| `CauseOfDeathTextD` | _input_ | `string` | Cause field D. Textual conditions. |
-| `CauseOfDeathCodeD` | _input_ | `string` | Cause field D. Classification codes comma separated. Its allowed to use post coordination, i.e. “Stem A & Ext 1 / Stem B”. |
-| `CauseOfDeathURID` | _input_ | `string` | Cause field D. Classification URI comma separated (Used only for ICD-11). Its allowed to use post coordination, i.e. “Stem A & Ext 1 / Stem B”. |
-| `IntervalD` | _input_ | `durations`  |Time interval from onset to death for Field D. |
-| `CauseOfDeathTextE` | _input_ | `string` | Cause field E. Textual conditions. |
-| `CauseOfDeathCodeE` | _input_ | `string` | Cause field E. Classification codes comma separated. Its allowed to use post coordination, i.e. “Stem A & Ext 1 / Stem B”. |
-| `CauseOfDeathURIE` | _input_ | `string` | Cause field E. Classification URI comma separated (Used only for ICD-11). Its allowed to use post coordination, i.e. “Stem A & Ext 1 / Stem B”. |
-| `IntervalE` | _input_ | `durations` | Time interval from onset to death for Field E. |
-| `CauseOfDeathTextPart2` | _input_ | `string` | Cause field Part2. Textual conditions. |
-| `CauseOfDeathCodePart2` | _input_ | `string` | Cause field Part2. Classification codes comma separated. Its allowed to use post coordination, i.e. “Stem A & Ext 1 / Stem B”. |
-| `CauseOfDeathURIPart2` | _input_ | `string` | Cause field Part2. Classification URI comma separated. Its allowed to use post coordination, i.e. “Stem A & Ext 1 / Stem B”. |
-| `SurgeryWasPerformed` | _input_ | `integer` | 0: No, 1: Yes, 9: Unknown |
-| `SurgeryDate` | _input_ | `date` | _see date format above_ |
-| `SurgeryReason` | _input_ | `string` | If yes, specify reason for surgery (disease or condition). |
-| `AutopsyWasRequested` | _input_ | `integer` | 0: No, 1: Yes, 9: Unknown |
-| `AutopsyFindings` | _input_ | `integer` | 0: No, 1: Yes, 9: Unknown |
-| `MannerOfDeath` | _input_ | `integer` | 0: Disease, 1: Accident, 2: Intentional self harm, 3: Assault, 4: Legal intervention, 5: War, 6: Could not be determined, 7: Pending investigation, 9: Unknown |
-| `MannerOfDeathDateOfExternalCauseOrPoisoning` | _input_ | `date` | _see date format above_ |
-| `MannerOfDeathDescriptionExternalCause` | _input_ | `string` | Description external cause. |
-| `MannerOfDeathPlaceOfOccuranceExternalCause` | _input_ | `integer` | 0: At home, 1: Residential institution, 2: School, other institution, public administration area, 3: Sports and athletics area, 4: Street and highway, 5: Trade and service area, 6: Industrial and construction area, 7: Farm, 8: Other place, 9: Unknown |
-| `FetalOrInfantDeathMultiplePregnancy` | _input_ | `integer` | 0: No, 1: Yes, 9: Unknown |
-| `FetalOrInfantDeathStillborn` | _input_ | `integer` | 0: No, 1: Yes, 9: Unknown |
-| `FetalOrInfantDeathDeathWithin24h` | _input_ | `integer` | If death within 24h specify number of hours survived. |
-| `FetalOrInfantDeathBirthWeight` | _input_ | `integer` | Birth weight (in grams). |
-| `FetalOrInfantDeathPregnancyWeeks` | _input_ | `integer` | Number of completed weeks of pregnancy. |
-| `FetalOrInfantDeathAgeMother` | _input_ | `integer` | Age of mother (years). |
-| `FetalOrInfantDeathPerinatalDescription` | _input_ | `string` | If death was perinatal, please state condition of mother that affected the fetus and newborn. |
-| `MaternalDeathWasPregnant` | _input_ | `integer` | 0: No, 1: Yes, 9: Unknown |
-| `MaternalDeathTimeFromPregnancy` | _input_ | `integer` | 0: "At time of death", 1: "Within 42 days before the death", 2: "Between 43 days up to 1 year before death", 3: "One year or more before death", 9: Unknown |
-| `MaternalDeathPregnancyContribute` | _input_ | `integer` |  0: No, 1: Yes, 9: Unknown  |
-| `UnderlyingCauseOfDeath` | _input_ | `string` | Manually assigned underlying cause of death provided as code (optional)|
-| `UnderlyingCauseOfDeathURI` | _input_ | `string` | Manually assigned underlying cause of death provided as a linearization URI (optional) | 
-| `Reject` | _output_ | `boolean` | `false` if the computation was able to select the underlying cause of death, `true` otherwise. The computation can fail for multiple reasons (codes not found in the specific linearization, implausibility of the coding, errors of the system.). The reason can be identified in the file logger or rule logger fields. |
-| `Report` | _output_ | `string` | Overview of the steps used by the rule engine to select the Underlaying cause of death. |
-| `Errors` | _output_ | `string` | Report field used in case errors occur during computation or rule engine has failed the computation. |
-| `Warnings` | _output_ | `string` | Report field used in case the rule engine triggered warnings during the computation. |
-| `UnderlyingCauseOfDeathComputed` | _output_ | `string` | Underlying cause of death computed by the system as code. (stem code only) |
-| `UnderlyingCauseOfDeathComputedURI` | _output_ | `string` | Underlying cause of death computed by the system as URI (stem code only)|
-| `UnderlyingCauseOfDeathComputedComplete` | _output_ | `string` | Underlying cause of death computed by the system (may include postcoordination combination)|
-| `UnderlyingCauseOfDeathComputedCompleteURI` | _output_ | `string` | Underlying cause of death computed by the system as linearization URI (may include postcoordination combination) |
+| `CertificateKey` | _input_ | `string` | يمكن استخدامه لتحديد الشهادة. |
+| `ICDVersion` | _input_ | `string` | حدد إصدار ICD المستخدم لترميز الشهادة. يدعم DORIS حاليًا الإصدار `ICD11` |
+| `ICDMinorVersion` | _input_ | `string` | حدد إصدار ICD الثانوي المستخدم لترميز الشهادة المرتبطة بإصدار ICD. |
+| `Sex` | _input_ | `string` | 1: ذكر، 2: أنثى، 9: غير معروف |
+| `DateBirth` | _input_ | `date` | _انظر تنسيق التاريخ أعلاه_ |
+| `DateDeath` | _input_ | `date` | _انظر تنسيق التاريخ أعلاه_ |
+| `EstimatedAge` | _input_ | `durations` | _انظر تنسيق المدد أعلاه_ |
+| `CauseOfDeathTextA` | _input_ | `string` | حقل السبب أ. الشروط النصية. |
+| `CauseOfDeathCodeA` | _input_ | `string` | حقل السبب أ. رموز التصنيف مفصولة بفواصل. يُسمح باستخدام تنسيق ما بعد، أي "الجذع أ والامتداد 1 / الجذع ب". |
+| `CauseOfDeathURIA` | _input_ | `string` | حقل السبب أ. عنوان URI للتصنيف مفصول بفواصل (يستخدم فقط لـ ICD-11). يُسمح باستخدام تنسيق ما بعد، أي "الجذع أ والامتداد 1 / الجذع ب". |
+| `IntervalA` | _input_ | `durations` | الفترة الزمنية من البداية حتى الوفاة للحقل أ. |
+| `CauseOfDeathTextB` | _input_ | `string` | حقل السبب ب. الشروط النصية. |
+| `CauseOfDeathCodeB` | _input_ | `string` | حقل السبب ب. رموز التصنيف مفصولة بفواصل. يُسمح باستخدام تنسيق ما بعد الوفاة، أي "الجذع أ والامتداد 1 / الجذع ب". |
+| `CauseOfDeathURIB` | _input_ | `string` | حقل السبب ب. عنوان URI للتصنيف مفصول بفواصل (يستخدم فقط في ICD-11). يُسمح باستخدام تنسيق ما بعد الوفاة، أي "الجذع أ والامتداد 1 / الجذع ب". |
+| `IntervalB` | _input_ | `durations` | الفترة الزمنية من البداية حتى الوفاة للحقل ب. |
+| `CauseOfDeathTextC` | _input_ | `string` | حقل السبب ج. شروط نصية. |
+| `CauseOfDeathC` | _input_ | `string` | حقل السبب ج. رموز التصنيف مفصولة بفواصل. يُسمح باستخدام تنسيق ما بعد الوفاة، مثل "الجذع أ والامتداد ١ / الجذع ب". |
+| `CauseOfDeathURIC` | _input_ | `string` | حقل السبب ج. عنوان URI للتصنيف مفصول بفواصل (يستخدم فقط في ICD-11). يُسمح باستخدام تنسيق ما بعد الوفاة، مثل "الجذع أ والامتداد ١ / الجذع ب". |
+| `IntervalC` | _input_ | `durations` | الفترة الزمنية من البداية إلى الوفاة للحقل ج. |
+| `CauseOfDeathTextD` | _input_ | `string` | حقل السبب د. شروط نصية. |
+| `CauseOfDeathCodeD` | _input_ | `string` | حقل السبب د. رموز التصنيف مفصولة بفواصل. يُسمح باستخدام تنسيق ما بعد الوفاة، مثل "الجذع أ والامتداد ١ / الجذع ب". |
+| `CauseOfDeathURID` | _input_ | `string` | حقل السبب د. عنوان URI للتصنيف مفصول بفواصل (يُستخدم فقط في ICD-11). يُسمح باستخدام تنسيق ما بعد الوفاة، مثل "الجذع أ والامتداد ١ / الجذع ب". |
+| `IntervalD` | _input_ | `durations` | الفترة الزمنية من البداية إلى الوفاة للحقل د. |
+| `CauseOfDeathTextE` | _input_ | `string` | حقل السبب هـ. الشروط النصية. |
+| `CauseOfDeathCodeE` | _input_ | `string` | حقل السبب هـ. رموز التصنيف مفصولة بفواصل. يُسمح باستخدام تنسيق ما بعد الوفاة، أي "الجذع أ والامتداد ١ / الجذع ب". |
+| `CauseOfDeathURIE` | _input_ | `string` | حقل السبب هـ. عنوان URI للتصنيف مفصول بفواصل (يُستخدم فقط في ICD-11). يُسمح باستخدام تنسيق ما بعد الوفاة، أي "الجذع أ والامتداد ١ / الجذع ب". |
+| `IntervalE` | _input_ | `durations` | الفترة الزمنية من البداية إلى الوفاة للحقل هـ. |
+| `CauseOfDeathTextPart2` | _input_ | `string` | حقل السبب الجزء ٢. الشروط النصية. |
+| `CauseOfDeathCodePart2` | _input_ | `string` | حقل السبب الجزء ٢. رموز التصنيف مفصولة بفواصل. يُسمح باستخدام تنسيق ما بعد الوفاة، أي "الجذع أ والامتداد ١ / الجذع ب". |
+| `CauseOfDeathURIPart2` | _input_ | `string` | حقل السبب الجزء الثاني. عنوان URI للتصنيف مفصول بفواصل. يُسمح باستخدام تنسيق ما بعد الجراحة، أي "الجذع أ والامتداد ١ / الجذع ب". |
+| `SurgeryWasPerformed` | _input_ | `integer` | ٠: لا، ١: نعم، ٩: غير معروف |
+| `SurgeryDate` | _input_ | `date` | _انظر تنسيق التاريخ أعلاه_ |
+| `SurgeryReason` | _input_ | `string` | إذا كانت الإجابة بنعم، فحدد سبب الجراحة (مرض أو حالة). |
+| `AutopsyWasRequested` | _input_ | `integer` | ٠: لا، ١: نعم، ٩: غير معروف |
+| `AutopsyFindings` | _input_ | `integer` | ٠: لا، ١: نعم، ٩: غير معروف |
+| `MannerOfDeath` | _input_ | `integer` | ٠: مرض، ١: حادث، ٢: إيذاء النفس عمدًا، ٣: اعتداء، ٤: تدخل قانوني، ٥: حرب، ٦: لم يُحدَّد، ٧: قيد التحقيق، ٩: غير معروف |
+| `MannerOfDeathDateOfExternalCauseOrPoisoning` | _input_ | `date` | _انظر تنسيق التاريخ أعلاه_ |
+| `MannerOfDeathDescriptionExternalCause` | _input_ | `string` | وصف سبب خارجي. |
+| `MannerOfDeathPlaceOfOccuranceExternalCause` | _input_ | `integer` | ٠: في المنزل، ١: مؤسسة سكنية، ٢: مدرسة، مؤسسة أخرى، منطقة إدارة عامة، ٣: منطقة رياضية وألعاب قوى، ٤: شارع وطريق سريع، ٥: منطقة تجارية وخدمية، ٦: منطقة صناعية وبناء، ٧: مزرعة، ٨: مكان آخر، ٩: غير معروف |
+| `FetalOrInfantDeathMultiplePregnancy` | _input_ | `integer` | 0: لا، 1: نعم، 9: غير معروف |
+| `FetalOrInfantDeathStillborn` | _input_ | `integer` | 0: لا، 1: نعم، 9: غير معروف |
+| `FetalOrInfantDeathDeathWithin24h` | _input_ | `integer` | إذا حدثت الوفاة خلال 24 ساعة، فحدد عدد الساعات التي قضاها على قيد الحياة. |
+| `FetalOrInfantDeathBirthWeight` | _input_ | `integer` | وزن الولادة (بالجرام). |
+| `FetalOrInfantDeathPregnancyWeeks` | _input_ | `integer` | عدد أسابيع الحمل المكتملة. |
+| `FetalOrInfantDeathAgeMother` | _input_ | `integer` | عمر الأم (بالسنوات). |
+| `FetalOrInfantDeathPerinatalDescription` | _input_ | `string` | إذا كانت الوفاة في فترة ما حول الولادة، يُرجى ذكر حالة الأم التي أثرت على الجنين والمولود. |
+| `MaternalDeathWasPregnant` | _input_ | `integer` | 0: لا، 1: نعم، 9: غير معروف |
+| `MaternalDeathTimeFromPregnancy` | _input_ | `integer` | 0: "وقت الوفاة"، 1: "خلال 42 يومًا قبل الوفاة"، 2: "بين 43 يومًا وحتى سنة واحدة قبل الوفاة"، 3: "سنة واحدة أو أكثر قبل الوفاة"، 9: غير معروف |
+| `MaternalDeathPregnancyContribute` | _input_ | `integer` | 0: لا، 1: نعم، 9: غير معروف |
+| `UnderlyingCauseOfDeath` | _input_ | `string` | تم تعيين سبب الوفاة الأساسي يدويًا ككود (اختياري) |
+| `UnderlyingCauseOfDeathURI` | _input_ | `string` | تم تعيين سبب الوفاة الأساسي يدويًا كعنوان URI خطي (اختياري) |
+| `Reject` | _output_ | `boolean` | `false` إذا تمكنت العملية الحسابية من تحديد سبب الوفاة الأساسي، و`true` بخلاف ذلك. قد تفشل العملية الحسابية لأسباب متعددة (رموز غير موجودة في الخطية المحددة، أو عدم معقولية الترميز، أو أخطاء النظام). يمكن تحديد السبب في حقول سجل الملفات أو سجل القواعد. |
+| `Report` | _output_ | `string` | نظرة عامة على الخطوات التي يستخدمها محرك القواعد لتحديد سبب الوفاة الأساسي. |
+| `الأخطاء` | _output_ | `string` | يُستخدم حقل التقرير في حالة حدوث أخطاء أثناء الحساب أو فشل محرك القواعد في الحساب. |
+| `التحذيرات` | _output_ | `string` | يُستخدم حقل التقرير في حالة إصدار محرك القواعد تحذيرات أثناء الحساب. |
+| `UnderlyingCauseOfDeathComputed` | _output_ | `string` | السبب الأساسي للوفاة المحسوب بواسطة النظام ككود. (كود جذعي فقط) |
+| `UnderlyingCauseOfDeathComputedURI` | _output_ | `string` | السبب الأساسي للوفاة المحسوب بواسطة النظام ككود URI (كود جذعي فقط) |
+| `UnderlyingCauseOfDeathComputedComplete` | _output_ | `string` | السبب الأساسي للوفاة المحسوب بواسطة النظام (قد يتضمن تركيبة ما بعد التنسيق) |
+| `UnderlyingCauseOfDeathComputedCompleteURI` | _output_ | `string` | السبب الأساسي للوفاة المحسوب بواسطة النظام كمعرّف خطي (قد يتضمن تركيبة ما بعد التنسيق) 
 
