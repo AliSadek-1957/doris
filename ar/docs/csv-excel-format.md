@@ -1,8 +1,8 @@
-﻿# Simple Tabular Death Certificate exchange format
+﻿# نموذج تبادل شهادة الوفاة الجدولية البسيطة
 
-This is a specific format used by the [Doris Tool](https://icd.who.int/doris) as a simple tabular alternative to the [standard JSON format](json-format.md).
+هذا تنسيق محدد يستخدمه [Doris Tool](https://icd.who.int/doris) كبديل جدولي بسيط لـ [standard JSON format](json-format.md).
 
-This format can be used as an Excel (.xlsx) file or as a comma separated text file (.csv). 
+يمكن استخدام هذا التنسيق كملف إكسيل (.xlsx) أو كملف نصي مفصول بفاصلة (.csv). 
 
 ## Sample Files
 You may download small sample files from here:
