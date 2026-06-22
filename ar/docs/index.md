@@ -1,26 +1,26 @@
 
-# Digital Open Rule Integrated cause of death Selection tool
+# أداة اختيار أسباب الوفاة المتكاملة ذات القاعدة الرقمية المفتوحة
 
-![dorisgraphicpicture](img/dorisgraphic.png)
+![dorisgraphicpicture](img/doristrial.png)
 
-**DORIS** is a multilingual software developed to facilitate the identification of the underlying cause of death. This tool examines the information provided on the death certificates and assists in automatically selecting the underlying cause of death following the mortality rules of the International Classification of Diseases (ICD) that have been fully digitalized. 
+إن أداة  **(DORIS)** هي أداة متعددة اللغات مصممة لتسهيل تحديد السبب الرئيسي للوفاة. يقوم هذا البرنامج بفحص المعلومات الواردة في شهادات الوفاة، وتساعد في اختيار السبب الرئيسي للوفاة تلقائيًا وفقًا لقواعد الوفيات في التصنيف الدولي للأمراض (ICD) الذي تم رقمنته بالكامل.
 
-**DORIS's** analysis capabilities play a crucial role in extracting valuable insights from the vast amount of data contained in death certificates. It employs an advanced algorithm to process and interpret the information, enabling users to uncover patterns, trends, and underlying causes of death. This analysis is invaluable for public health surveillance, epidemiological studies, and policy decision-making, as it facilitates the identification of key health indicators, disease prevalence, and potential areas for intervention.
+تلعب قدرات التحليل في برنامج **(DORIS)** دورًا حاسمًا في استخلاص رؤى قيّمة من الكم الهائل من البيانات الموجودة في شهادات الوفاة. يستخدم البرنامج خوارزمية متقدمة لمعالجة المعلومات وتفسيرها، مما يمكّن المستخدمين من الكشف عن الأنماط والاتجاهات والأسباب الرئيسية للوفاة. يُعد هذا التحليل بالغ الأهمية لرصد الصحة العامة، والدراسات الوبائية، وصنع القرار السياسي، حيث يُسهّل تحديد المؤشرات الصحية الرئيسية، وانتشار الأمراض، والمجالات المحتملة للتدخل.
 
-**DORIS** ability to handle thousands of death certificates in text and code mode and support multiple file formats offers immense benefits to users. It streamlines data analysis processes, promotes interoperability with various data sources, and empowers users to gain meaningful insights from extensive datasets, ultimately contributing to improved public health outcomes and informed decision-making.
+توفر قدرة أداة  **(DORIS)** على التعامل مع آلاف شهادات الوفاة بصيغتي النص والترميز، ودعمه لصيغ ملفات متعددة، فوائد جمة للمستخدمين. تُبسّط أداة  (DORIS) عمليات تحليل البيانات، ويعزز التوافق مع مصادر البيانات المختلفة، ويُمكّن المستخدمين من استخلاص رؤى قيّمة من مجموعات البيانات الضخمة، مما يُسهم في نهاية المطاف في تحسين نتائج الصحة العامة ودعم اتخاذ القرارات المستنيرة.
 
-**DORIS** offers multiple options for its usage, providing flexibility and convenience to users. It can be used as a web application or as a standalone application with a user interface that can be installed on any computer.
+تُوفر **(DORIS)** خيارات استخدام متعددة، مما يُتيح للمستخدمين المرونة والراحة. يُمكن استخدامها كتطبيق ويب أو كتطبيق مستقل بواجهة مستخدم يُمكن تثبيتها على أي جهاز كمبيوتر.
 
-**DORIS** supports ten ICD-11 languages, including [Arabic](https://icd.who.int/doris/ar), [Chinese](https://icd.who.int/doris/zh), [Czech](https://icd.who.int/doris/cs), [English](https://icd.who.int/doris/en), [French](https://icd.who.int/doris/fr), [Portuguese](https://icd.who.int/doris/pt), [Russian](https://icd.who.int/doris/ru), [Spanish](https://icd.who.int/doris/es), [Turkish](https://icd.who.int/doris/tr), and [Uzbek](https://icd.who.int/doris/uz)
+تدعم **(DORIS)** عشر لغات من لغات التصنيف الدولي للأمراض المراجعة الحادية عشر (ICD-11) ، بما في ذلك [العربية](https://icd.who.int/doris/ar), [الصينية](https://icd.who.int/doris/zh), [التشيكية](https://icd.who.int/doris/cs), [الإنجليزية](https://icd.who.int/doris/en), [الفرنسية](https://icd.who.int/doris/fr), [البرتغالية](https://icd.who.int/doris/pt), [الروسية](https://icd.who.int/doris/ru), [الإسبانية](https://icd.who.int/doris/es), [التركية](https://icd.who.int/doris/tr), و [الأوزبكية](https://icd.who.int/doris/uz)
 
-  - **DORIS Web Version** is a web-based application accessible through a web browser. It applies the ICD mortality rules on individual death certificates for cause of death selection. The web version can be accessed [here](https://icd.who.int/doris/workspace/en)
+  -يُعد إصدار الويب لأداة  (DORIS) تطبيقًا قائمًا على الويب يُمكن الوصول إليه عبر متصفح الإنترنت. يُطبّق قواعد التصنيف الدولي للأمراض (ICD) الخاصة بالوفيات على شهادات الوفاة الفردية لتحديد سبب الوفاة. يُمكن الوصول إلى نسخة الويب من هنا.(https://icd.who.int/doris/workspace/en)
 
-  > [More information on the web version](doris-web.md)
+  > [للمزيد من المعلومات حول نسخة الويب، انقر هنا.](doris-web.md)
 
-  - **DORIS Desktop Version for batch processing** is a desktop software that can be installed on local computers. It is designed to allow effortless batch processing of large volumes of death certificates. Whether working with text or code modes, this software analyzes thousands of death certificates and supports multiple formats, Excel, CSV, and JSON.
- > [More information on the desktop version](doris-desktop-user-guide.md)
+  -يُعد إصدار سطح المكتب ل (DORIS) للمعالجة الدفعية برنامجًا مكتبيًا يُمكن تثبيته على أجهزة الكمبيوتر المحلية. صُمّم هذا البرنامج لتسهيل المعالجة الدفعية لكميات كبيرة من شهادات الوفاة. سواءً أكان العمل مع النصوص أو الرموز، يحلل هذا البرنامج آلاف شهادات الوفاة ويدعم صيغًا متعددة، منها Excel وCSV  و JSON .  
+ > [للمزيد من المعلومات حول نسخة سطح المكتب](doris-desktop-user-guide.md)
   
-  - **Integration with other Software:** In addition to the software mentioned above, you can access DORIS through **ICD API (Application Programming Interface)**. This feature enables easy integration with other systems or applications.
-> [More information on using DORIS via ICD-API](doris-api.md)
+  - التكامل مع البرامج الأخرى: بالإضافة إلى البرامج المذكورة أعلاه، يمكنك الوصول إلى (DORIS) عبر واجهة برمجة تطبيقات (ICD-API). تتيح هذه الميزة التكامل بسهولة مع الأنظمة والتطبيقات الأخرى.
+> [للمزيد من المعلومات حول إستخدام أداة (DORIS)   بواسطة واجهة برمجة تطبيقات (ICD-API).](doris-api.md)
 
   ![dorishomepagepicture ](img/DORIShompage24updated.png)
