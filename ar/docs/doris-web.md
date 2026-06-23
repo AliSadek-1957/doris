@@ -1,85 +1,85 @@
-# DORIS Web Version
+# نظام (DORIS) الإلكتروني
 
-DORIS Web Version is a web-based application accessible through a web browser. It applies the ICD mortality rules on individual death certificates for automated cause of death selection. The web version can be accessed [here](https://icd.who.int/doris/workspace/en). 
+نظام (DORIS) الإلكتروني هو تطبيق ويب يمكن الوصول إليه عبر متصفح الإنترنت. يطبق قواعد التصنيف الدولي للأمراض (ICD) الخاصة بالوفيات على شهادات الوفاة الفردية لتحديد سبب الوفاة تلقائيًا. [يمكن الوصول إلى نسخة الويب من هنا.](https://icd.who.int/doris/workspace/en). 
 
-It supports the 13 officially released ICD-11 languages, including [Arabic](https://icd.who.int/doris/ar), [Chinese](https://icd.who.int/doris/zh), [Czech](https://icd.who.int/doris/cs), [English](https://icd.who.int/doris/en), [French](https://icd.who.int/doris/fr), [Kazakh](https://icd.who.int/doris/kk), [Portuguese](https://icd.who.int/doris/pt), [Russian](https://icd.who.int/doris/ru),
- [Slovak](https://icd.who.int/doris/sk), [Spanish](https://icd.who.int/doris/es), [Swedish](https://icd.who.int/doris/sv), [Turkish](https://icd.who.int/doris/tr), and [Uzbek](https://icd.who.int/doris/uz). 
+يدعم النظام اللغات الـ 13 الرسمية المعتمدة من التصنيف (ICD-11)، بما في ذلك [العربية](https://icd.who.int/doris/ar), [الصينية](https://icd.who.int/doris/zh), [التشيكية](https://icd.who.int/doris/cs), [الإنجليزية](https://icd.who.int/doris/en), [الفرنسية](https://icd.who.int/doris/fr), [الكازاخية](https://icd.who.int/doris/kk), [البرتغالية](https://icd.who.int/doris/pt), [الروسية](https://icd.who.int/doris/ru),
+ [السلوفاكية](https://icd.who.int/doris/sk), [الإسبانية](https://icd.who.int/doris/es), [السويدية](https://icd.who.int/doris/sv), [التركية](https://icd.who.int/doris/tr), and [الأوزبكية](https://icd.who.int/doris/uz). 
 
-To switch between languages use the language key at the top right corner of the screen. 
+للتبديل بين اللغات، استخدم مفتاح اللغة في الزاوية العلوية اليمنى من الشاشة.
 
-![DORIS Web screenshot picture ](img/DORISwebjune25.png){: style="width:40%"}
+![صورة من نظام (DORIS) الإلكتروني ](img/DORISwebjune25.png){: style="width:40%"}
 
-Provide the required information about the deceased individual.
+أدخل المعلومات المطلوبة عن المتوفى.
 
-**Administrative Data**: Fill in the following details - Sex, Date of Birth, Date of Death, and Estimated Age (in years, months, weeks, days, hours, minutes, or seconds), or leave it unknown.
+**البيانات الإدارية**: املأ البيانات التالية: الجنس، تاريخ الميلاد، تاريخ الوفاة، والعمر التقريبي (بالسنوات أو الأشهر أو الأسابيع أو الأيام أو الساعات أو الدقائق أو الثواني)، أو اتركه غير معروف.
 
-![Administrativedatascreenshot picture ](img/administrativedatascreenshotupdated.png){: style="width:40%"}
+![صورة من قسم البيانات الإدارية ](img/administrativedatascreenshotupdated.png){: style="width:40%"}
 
-In Frame A, the **Medical Data** fields are associated with the ICD-11 coding tool, allowing users to search by term or by ICD-11 code.
+في الإطار (أ)، ترتبط حقول **البيانات الطبية** بأداة ترميز التصنيف الدولي للأمراض (ICD-11)، مما يسمح للمستخدمين بالبحث باستخدام المصطلح أو رمز التصنيف (ICD-11). 
 
-Part 1: Cause(s) of Death - Complete Line a, b, c, and d along with their respective time intervals. 
+الجزء الأول: سبب/أسباب الوفاة - أكمل الأسطر أ، ب، ج، د مع تحديد الفترات الزمنية لكل منها.
 
-Part 2:  Indicate any other significant conditions contributing to the death, along with their corresponding time intervals. In this section, time intervals can be assigned separately for each reported condition. To do so, users need to search for the condition by term or ICD-11 code using the coding tool then assign the relevant time interval after selecting the condition.
+الجزء الثاني: حدد أي حالات مرضية أخرى ساهمت في الوفاة، مع تحديد الفترات الزمنية لكل منها. في هذا القسم، يمكن تحديد الفترات الزمنية بشكل منفصل لكل حالة مرضية مُبلغ عنها. للقيام بذلك، يجب على المستخدمين البحث عن الحالة المرضية باستخدام المصطلح أو رمز التصنيف الدولي للأمراض (ICD-11) باستخدام أداة الترميز، ثم تحديد الفترة الزمنية المناسبة بعد اختيار الحالة.
 
-![FrameAmedicaldatascreenshotpicture ](img/FrameAmedicaldatascreenshotupdated.png){: style="width:40%"}
+![الإطار أ: لقطة شاشة للبيانات الطبية ](img/FrameAmedicaldatascreenshotupdated.png){: style="width:40%"}
 
-Frame B consists of the following fields:
+يتكون الإطار ب من الحقول التالية:
+**تفاصيل الجراحة**: قدم أي معلومات ذات صلة بالعمليات الجراحية التي أُجريت للمتوفى من خلال الإجابة على الأسئلة.
 
-**Details of Surgery**: Provide any relevant information about surgeries performed on the deceased by answering the questions.
+![الجراحة: لقطة شاشة ](img/surgeryandautopsyscreenshot.png){: style="width:40%"}
 
-![surgeryscreenshotpicture ](img/surgeryandautopsyscreenshot.png){: style="width:40%"}
+**طريقة الوفاة**: حدد طريقة حدوث الوفاة (مثل: طبيعية، حادث، انتحار، قتل).
 
-**Manner of Death**: Specify the manner in which the death occurred (e.g., natural, accident, suicide, homicide).
+![طريقة الوفاة: لقطة شاشة ](img/manneofdeathscreenshotupdated.png){: style="width:40%"}
 
-![Mannerofdeathscreenshotpicture ](img/manneofdeathscreenshotupdated.png){: style="width:40%"}
+**مكان وقوع السبب الخارجي**: حدد المكان الذي وقع فيه السبب الخارجي (مثل: حادث، إصابة). هذه المعلومات ضرورية لتوثيق ظروف الوفاة بدقة.
 
-**Place of occurrence** of the external cause: specify the place where the external cause (e.g., accident, injury) occurred. This information is essential for accurately documenting the circumstances surrounding the death.
+**وفاة الجنين أو الرضيع**: يُرجى تعبئة المعلومات المطلوبة حول الحمل المتعدد، أو ولادة جنين ميت، مع تحديد عدد الساعات التي عاشها الوليد (إن وُجدت)، ووزنه عند الولادة، وعدد أسابيع الحمل المكتملة، وعمر الأم، وفي حال كانت الوفاة في فترة ما حول الولادة، يجب تحديد حالة الأم التي أثرت على الجنين.
 
-**Fetal or Infant Death**: Fill in the needed information on multiple pregnancy, stillbirth specifying the number of hours survived if applicable, the birth weight, the number of completed weeks of pregnancy, the age of the mother and if the death was perinatal, the conditions of the mother that affected the fetous should be specified. 
+![صورة لوفاة الجنين أو الرضيع ](img/fetalinfantdeathscreenshotupdated.png){: style="width:40%"}
 
-![fetalinfantdeathscreenshotpicture ](img/fetalinfantdeathscreenshotupdated.png){: style="width:40%"}
+للسيدات (في فترة الإنجاب): 
 
-For women: 
+**حالة الحمل**: هل كانت المتوفاة حاملاً وقت الوفاة؟ يُرجى اختيار الخيار المناسب.
 
-**Pregnancy Status**: Was the deceased pregnant at the time of death? Choose the appropriate option. 
+**مدة الحمل**: إذا كانت المتوفاة حاملاً، يُرجى تحديد مدة الحمل.
 
-**Time from Pregnancy**: If the deceased individual was pregnant, provide the time from pregnancy.
+**مساهمة الحمل في الوفاة**: يُرجى تحديد ما إذا كان للحمل دور في وفاة المرأة.
 
-**Contribution of Pregnancy to Death**: Determine if the pregnancy played a role in the woman's death. 
 
-![pregnancyscreenshotpicture ](img/pregnancyscreenshotupdated.png){: style="width:40%"}
+![صورة للحمل ](img/pregnancyscreenshotupdated.png){: style="width:40%"}
 
-To demonstrate the functionality of the DORIS web version, an **examples form** key provides a few examples to showcase how the web version operates. Users can refer to these examples to understand how to use the web version effectively.
+لتوضيح وظائف نسخة (DORIS) الإلكترونية، يُقدم زر **نماذج الأمثلة** بعض الأمثلة لتوضيح كيفية عمل النسخة الإلكترونية. يمكن للمستخدمين الرجوع إلى هذه الأمثلة لفهم كيفية استخدام النسخة الإلكترونية بفعالية.
 
-Additionally, the **clear content** key was introduced. By clicking on this key, users can initiate a fresh death certificate with all the fields cleared, allowing them to start with a new entry without any existing data.
+بالإضافة إلى ذلك، تم تقديم زر **المحتوى الواضح**. بالنقر على هذا الزر، يمكن للمستخدمين إنشاء شهادة وفاة جديدة مع مسح جميع الحقول، مما يسمح لهم بالبدء بإدخال جديد دون أي بيانات سابقة.
 
-To process the required Underlying Cause of Death (UCOD), users should simply click on the '**Process**' button. This action will generate the necessary information based on the entered data, helping users select the underlying cause of death.
+لمعالجة السبب الرئيسي للوفاة المطلوب، ما على المستخدمين سوى النقر على زر **معالجة**. سيؤدي هذا الإجراء إلى إنشاء المعلومات اللازمة بناءً على البيانات المُدخلة، مما يساعد المستخدمين على تحديد السبب الرئيسي للوفاة.
 
-It is possible to fill in and process several Medical Certificates of Cause of Death MCCDs in the same session using the web version. To view the result of a specific certificate, go to the "Browse MCCDs" section at the top right and click on the relevant MCCD to display its processing details.
+يمكن ملء ومعالجة عدة شهادات طبية لأسباب الوفاة في نفس الجلسة باستخدام نسخة الويب. لعرض نتيجة شهادة معينة، انتقل إلى قسم "استعراض شهادات الوفاة" في أعلى اليمين، وانقر على الشهادة المطلوبة لعرض تفاصيل معالجتها.
 
-![browsemccds](img/browsemccds.png){: style="width:30%"}
+![استعراض شهادات الوفاة](img/browsemccds.png){: style="width:30%"}
 
-**Output section** 
+**قسم المخرجات** 
 
-Once the Underlying Cause of Death (UCOD) is selected, it will be presented in the **output** section which includes two distinct fields related to the **underlying cause of death.** The first field represents the single underlying cause of death that was selected based on the information provided and is highlighted in yellow to draw the attention of the users. Additionally, if available, the output section also includes a field for the **cluster underlying cause of death**. This field indicates the postcoordinated codes if applicable providing further context and details. 
+بمجرد تحديد السبب الرئيسي للوفاة، سيظهر في قسم **المخرجات** الذي يتضمن حقلين منفصلين متعلقين **بالسبب الرئيسي للوفاة**. يُمثل الحقل الأول السبب الرئيسي الوحيد للوفاة الذي تم اختياره بناءً على المعلومات المُقدمة، وهو مُظلل باللون الأصفر لجذب انتباه المستخدمين. بالإضافة إلى ذلك، يتضمن قسم "المخرجات"، إن وُجد، حقلاً خاصاً **بالسبب الرئيسي للوفاة العنقودي**. يشير هذا الحقل إلى الرموز المُنسقة لاحقاً، إن وُجدت، مما يوفر سياقاً وتفاصيل إضافية.
 
-![outputdetailedexplanationsscreenshotpicture](img/outputdetailedexplanationscreenshot.png){: style="width:40%"}
+![شرح تفصيلي للمخرجات](img/outputdetailedexplanationscreenshot.png){: style="width:40%"}
 
-The DORIS tool provides four complementary visualization modes to support review, validation, and training:
+توفر أداة (DORIS) أربعة أنماط عرض بيانات متكاملة لدعم المراجعة والتحقق والتدريب:
 
-**Textual Report**: This visualization illustrates the steps and mortality rules that were applied in the selection of the underlying cause of death. The report includes a **warnings** field, which flags any inconsistencies in the reported information or suggests the need for manual verification. The warnings are displayed in yellow. Following the warnings, a concise report outlines the main steps that were applied. For a more detailed understanding, a full report is also included in the output section. This comprehensive report provides a thorough explanation of the sequence followed, along with detailed information about the mortality rules and steps that were applied or not during the selection of the underlying cause of death.
+**التقرير النصي**: يوضح هذا الرسم البياني الخطوات وقواعد الوفيات التي طُبقت في تحديد السبب الرئيسي للوفاة. يتضمن التقرير خانة **تنبيهات** تُشير إلى أي تناقضات في المعلومات المُبلغ عنها أو تُشير إلى الحاجة إلى التحقق اليدوي. تظهر "التنبيهات" باللون الأصفر. يلي "التنبيهات" تقرير موجز يُلخص الخطوات الرئيسية المُطبقة. وللحصول على فهم أكثر تفصيلًا، يتضمن قسم المخرجات تقريرًا كاملًا. يُقدم هذا التقرير الشامل شرحًا وافيًا للتسلسل المُتبع، بالإضافة إلى معلومات تفصيلية حول قواعد الوفيات والخطوات التي طُبقت أو لم تُطبق أثناء تحديد السبب الرئيسي للوفاة.
 
-![Textualreportview](img/textualreport.png){: style="width:40%"}
+![صورة 10 ](img/textualreport.png){: style="width:40%"}
 
-**Tabular Report:** This interactive visualization displays the steps for UCOD selection in a tabular format. Clicking on the rows allows to follow the steps one after the other from top to bottom and accordingly the rules applied will be highlighted on the certificate
+**التقرير الجدولي:**  يعرض هذا الرسم البياني التفاعلي خطوات اختيار السبب الرئيسي للوفاة في شكل جدولي. يُتيح النقر على الصفوف تتبع الخطوات واحدة تلو الأخرى من الأعلى إلى الأسفل، وسيتم تمييز القواعد المُطبقة في الشهادة وفقًا لذلك.
 
-![Tabularreportview](img/Tabularreport.png){: style="width:40%"}
+![صورة 11 ](img/Tabularreport.png){: style="width:40%"}
 
-**Rule Flow Report:**  This visualization displays the report as a sequence of applied rules ultimately leading to the selected UCOD.
+**تقرير تدفق القواعد:** يعرض هذا الرسم البياني التقرير كسلسلة من القواعد المُطبقة التي تؤدي في النهاية إلى تحديد السبب الرئيسي للوفاة.
 
-![Ruleflowreportview](img/Ruleflowreport.png){: style="width:40%"}
+![صورة 12 ](img/Ruleflowreport.png){: style="width:40%"}
 
-**Rule Sequence Report:** This visualization displays the report as a horizontal sequence. The specific rules applied at each step are listed below showing the order in which the rules were applied from top to bottom.
+**تقرير تسلسل القواعد:** يعرض هذا الرسم البياني التقرير كسلسلة أفقية. ترد أدناه القواعد المحددة المطبقة في كل خطوة، موضحة الترتيب الذي تم به تطبيق القواعد من الأعلى إلى الأسفل.
 
-![Rulesequencereportview](img/Rulesequencereport.png){: style="width:40%"}
+![صورة 13 ](img/Rulesequencereport.png){: style="width:40%"}
 
