@@ -1,35 +1,34 @@
-**DORIS: Revolutionizing Global Cause of Death Data Management with ICD-11**
+**دوريس (DORIS): ثورة في إدارة بيانات أسباب الوفاة عالميًا باستخدام التصنيف الدولي للأمراض (ICD-11)**
 
-Welcome to DORIS, the Digital Open Rule Integrated Software, designed to streamline the selection of underlying causes of death using ICD-11. DORIS is an innovative, multilingual software solution that modernizes death certificate processing and enhances global cause of death data management.
+مرحبًا بكم في (DORIS)، الأداة الرقمية المتكاملة القائمة على القواعد المفتوحة، والمصممة لتبسيط عملية اختيار الأسباب الكامنة وراء الوفاة باستخدام التصنيف (ICD-11). إن أداة (DORIS) هي حل برمجي مبتكر ومتعدد اللغات، يُحدث نقلة نوعية في معالجة شهادات الوفاة، ويعزز إدارة بيانات أسباب الوفاة عالميًا.
 
-**A Collaborative Innovation**
-Developed in partnership with countries and mortality experts from the WHO-FIC Network, DORIS is a cornerstone of WHO's digital solution for mortality reporting. It shares the robust features of ICD-11, the gold standard in health data management and reporting.
+**ابتكار تعاوني**
+: طُوّرت (DORIS) بالشراكة مع دول وخبراء في مجال الوفيات من شبكة منظمة الصحة العالمية لمعلومات الوفيات (WHO-FIC)، وهي حجر الزاوية في حلول منظمة الصحة العالمية الرقمية للإبلاغ عن الوفيات. وتتمتع (DORIS) بميزات قوية من التصنيف (ICD-11)، المعيار الذهبي في إدارة البيانات الصحية والإبلاغ عنها.
 
-**Enhancing Health Policy and Research**
-Aligned with the ICD-11 reference guide, a legacy spanning 150 years, DORIS plays a crucial role in shaping health policy, optimizing resource allocation, and driving research by improving mortality coding and reporting.
+**تعزيز السياسات الصحية والبحوث**
+: تتماشى (DORIS) مع الدليل المرجعي للتصنيف (ICD-11)، وهو إرث يمتد على مدى 150 عامًا، ويلعب دورًا محوريًا في صياغة السياسات الصحية، وتحسين تخصيص الموارد، ودفع عجلة البحث العلمي من خلال تحسين ترميز الوفيات والإبلاغ عنها.
 
-![dorisdesktoppicture](img/Desktopversion24.png)
+![صورة سطح المكتب لبرنامج (DORIS)](img/Desktopversion24.png)
 
-**Key Features**
+**الميزات الرئيسية**
 
-**Semantic Interoperability and Unrestricted Access:** Just like other ICD-11 tools, DORIS is freely accessible and ensures seamless semantic interoperability, functioning both online and offline. This allows for versatile data sharing and analysis across various platforms.
+**التوافق الدلالي والوصول غير المقيد**: تمامًا مثل أدوات (ICD-11) الأخرى، يُمكن الوصول إلى (DORIS) مجانًا، ويضمن توافقًا دلاليًا سلسًا، ويعمل عبر الإنترنت ودون اتصال. يتيح ذلك مشاركة البيانات وتحليلها على نطاق واسع عبر مختلف المنصات.
 
-**Multilingual Capabilities:** DORIS supports ten ICD-11 languages, including [Arabic](https://icd.who.int/doris/ar), [Chinese](https://icd.who.int/doris/zh), [Czech](https://icd.who.int/doris/cs), [English](https://icd.who.int/doris/en), [French](https://icd.who.int/doris/fr), [Portuguese](https://icd.who.int/doris/pt), [Russian](https://icd.who.int/doris/ru), [Spanish](https://icd.who.int/doris/es), [Turkish](https://icd.who.int/doris/tr), and [Uzbek](https://icd.who.int/doris/uz). As the range of ICD-11 languages grows, so will the language options in DORIS, ensuring global accessibility and inclusivity.
+**إمكانيات متعددة اللغات:** يدعم (DORIS) عشر لغات من لغات  تصنيف (ICD-11)، بما في ذلك [العربية](https://icd.who.int/doris/ar), [الصينية](https://icd.who.int/doris/zh), [التشيكية](https://icd.who.int/doris/cs), [الإنجليزية](https://icd.who.int/doris/en), [الفرنسية](https://icd.who.int/doris/fr), [البرتغالية](https://icd.who.int/doris/pt), [الروسية](https://icd.who.int/doris/ru), [الإسبانية](https://icd.who.int/doris/es), [التركية](https://icd.who.int/doris/tr), و [الأوزباكية](https://icd.who.int/doris/uz). ومع ازدياد نطاق لغات ICD-11، ستزداد خيارات اللغات في (DORIS)، مما يضمن سهولة الوصول والشمولية على مستوى العالم.
 
-**Customizable Configuration:** Tailor your DORIS experience with customizable settings for language preferences and ICD-11 version adjustments, ensuring a personalized user experience that meets national and organizational needs.
+**تكوين قابل للتخصيص** : خصّص تجربة استخدامك لأداة (DORIS) من خلال إعدادات قابلة للتخصيص لتفضيلات اللغة وتعديلات إصدار (ICD-11)، مما يضمن تجربة مستخدم شخصية تلبي الاحتياجات الوطنية والتنظيمية.
 
-**Effortless Maintenance:** DORIS stays updated with the latest ICD-11 advancements, ensuring smooth maintenance and continuous alignment with evolving classification updates and best practices.
+**صيانة سهلة** : يتم تحديث (DORIS) باستمرار بأحدث التطورات في (ICD-11)، مما يضمن صيانة سلسة ومواءمة مستمرة مع تحديثات التصنيف وأفضل الممارسات.
 
-**Efficient Data Importation:** Import death certificates in formats like JSON, Excel, and CSV. DORIS computes the underlying cause of death and can handle thousands of certificates efficiently.
+**استيراد البيانات بكفاءة** : استدعِ شهادات الوفاة بصيغ مثل JSON وExcel وCSV. تحسب أداة (DORIS) السبب الرئيسي للوفاة وتتعامل بكفاءة مع آلاف الشهادات.
 
-**Automated Text-to-Code Conversion:** DORIS enhances accuracy by automatically converting textual diagnoses into ICD-11 codes, streamlining the coding process.
+**تحويل تلقائي للنصوص إلى رموز** : يعزز نظام (DORIS) الدقة من خلال التحويل التلقائي للتشخيصات النصية إلى رموز (ICD-11)، مما يبسط عملية الترميز.
 
-**Improved Workflow Efficiency:** From detailed death certificate examination to easy filtering, sorting, and processing, DORIS optimizes workflow and ensures compliance with ICD-11 standards.
+**تحسين كفاءة سير العمل** : بدءًا من فحص شهادات الوفاة بدقة وصولًا إلى سهولة الفلترة والفرز والمعالجة، يُحسّن نظام (DORIS) سير العمل ويضمن الامتثال لمعايير (ICD-11).
 
-**Simple Data Exportation:** Easily export certificates for analysis and sharing. DORIS provides detailed rule applications and UCOD selections, fully compatible with the ANACoD-3 tool for mortality data analysis.
-Empowering Research, Surveillance, and Policy Development
+**تصدير البيانات بسهولة** : صدّر الشهادات بسهولة لتحليلها ومشاركتها. يوفر نظام (DORIS) تطبيقات قواعد مفصلة واختيارات السبب الرئيسي للوفاة (UCOD)، وهو متوافق تمامًا مع أداة (ANACoD-3) لتحليل بيانات الوفيات، داعماً البحث والمراقبة وتطوير السياسات.
 
-DORIS not only facilitates the dissemination of mortality data but also ensures data integrity and compliance with ICD-11 international standards. Embrace the future of cause of death data management with DORIS.
+ولا يقتصر دور نظام (DORIS) على تسهيل نشر بيانات الوفيات فحسب، بل يضمن أيضًا سلامة البيانات والامتثال لمعايير (ICD-11) الدولية. انضم إلى مستقبل إدارة بيانات أسباب الوفاة مع نظام (DORIS).
 
 
-[Instructions on downloading and installing DORIS Desktop](doris-desktop-download-installation.md)
+[تعليمات حول تنزيل وتثبيت برنامج (DORIS Desktop)](doris-desktop-download-installation.md)
