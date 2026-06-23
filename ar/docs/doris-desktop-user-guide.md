@@ -1,13 +1,11 @@
 # دليل مستخدم برنامج (DORIS Desktop)
 
-DORIS Desktop is a software solution tailored for the efficient batch processing of death certificates. It facilitates the analysis of vast quantities of data, accommodating both coded and textual diagnoses. The software's design emphasizes ease of use, allowing for the importation of certificates in diverse formats such as standard e-MCCD in JSON, Excel and CSV. 
-
+برنامج DORIS Desktop هو حل برمجي مصمم خصيصًا لمعالجة شهادات الوفاة بكفاءة عالية. يُسهّل البرنامج تحليل كميات هائلة من البيانات، ويدعم التشخيصات المرمزة والنصية على حد سواء. يتميز البرنامج بتصميم سهل الاستخدام، حيث يسمح باستيراد الشهادات بتنسيقات متنوعة مثل e-MCCD القياسي بتنسيق JSON، وExcel، وCSV.
 ![DORIS desktop](img/Desktopversion24.png)
 
-DORIS Desktop requires a `DORIS Dataset` to work with. You may import certificates from a file in one of the supported formats. Once a file is imported, it is saved as a `DORIS Dataset`. After that, everything done in the software uses this `DORIS dataset`. For example, If you use `Process` to compute the underlying cause of death on all certificates, This information is saved into the Doris Dataset and remembered.
-You can always open a DORIS Dataset using `Open DORIS Dataset` menu to return to where you left off. 
+يتطلب برنامج (DORIS Desktop) وجود مجموعة بيانات (DORIS) للعمل. يمكنك استيراد الشهادات من ملف بأحد التنسيقات المدعومة. بمجرد استيراد الملف، يتم حفظه كمجموعة بيانات (DORIS). بعد ذلك، يعتمد البرنامج على مجموعة البيانات هذه في جميع العمليات. على سبيل المثال، إذا استخدمتَ خاصية "المعالجة" لحساب السبب الرئيسي للوفاة في جميع الشهادات، فسيتم حفظ هذه المعلومات في مجموعة بيانات (DORIS). يمكنك دائمًا فتح مجموعة بيانات (DORIS) من خلال قائمة "فتح مجموعة بيانات DORIS" للعودة إلى حيث توقفت. 
 
-You can always `Export` the certificates in a `DORIS Dataset` into supported formats.
+يمكنك دائمًا تصدير الشهادات من مجموعة بيانات (DORIS) إلى التنسيقات المدعومة.
 
 ## Importing Data
 You may import certificates using one of the supported file formats. Details of the formats and sample files are available at the links below:
