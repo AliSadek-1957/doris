@@ -1,11 +1,11 @@
-# Using DORIS from ICD-API
+# استخدام (DORIS) من واجهة برمجة تطبيقات ICD
 
-## For Software Developers and System Integrators:
+## لمطوري البرامج ومكاملين الأنظمة:
 
-It is possible to get access to the DORIS rule engine programmatically from the ICD-API. Currently, there is a prerelease of this system available.
+يمكن الوصول إلى محرك قواعد (DORIS) برمجيًا من خلال واجهة برمجة تطبيقات ICD. يتوفر حاليًا إصدار تجريبي من هذا النظام.
 
 
-- [ICD-API Home page](https://icd.who.int/icdapi) and 
-- [ICD-API documentation](https://icd.who.int/docs/icd-api/DORISSupport/) contains more information on the ICD-API
+- [الصفحة الرئيسية لواجهة برمجة تطبيقات ICD](https://icd.who.int/icdapi) و 
+- [وثائق واجهة برمجة تطبيقات ICD](https://icd.who.int/docs/icd-api/DORISSupport/) (تحتوي على مزيد من المعلومات حول واجهة برمجة تطبيقات ICD.)
 
-- [ICD-API Reference (Open API)](https://id.who.int/swagger/index.html) provides detailed explanations on the endpoints that the API supports including the `doris` endpoint 
+- [مرجع واجهة برمجة تطبيقات ICD (واجهة برمجة التطبيقات المفتوحة)](https://id.who.int/swagger/index.html) يوفر شروحات مفصلة حول نقاط النهاية التي تدعمها واجهة برمجة التطبيقات، بما في ذلك نقطة نهاية (DORIS).
