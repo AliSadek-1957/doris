@@ -1,9 +1,9 @@
-# Supported Import File Formats
+# تنسيقات ملفات الاستيراد المدعومة
 
-DORIS Desktop supports importing files in standard JSON, Excel or in CSV formats. Detailed explanations of these formats could be found at the links below
-## [Standard JSON Format](json-format.md)
+يدعم برنامج (DORIS Desktop) استيراد الملفات بتنسيقات (JSON) القياسية، أو(Excel)، أو (CSV). يمكنكم الاطلاع على شروحات مفصلة لهذه التنسيقات عبر الروابط أدناه.
+## [تنسيق (JSON) القياسي](json-format.md)
 
-## [Tabular Format (Excel, CSV)](csv-excel-format.md)
+## [تنسيق جدولي (Excel)، (CSV)](csv-excel-format.md)
 
 
 
