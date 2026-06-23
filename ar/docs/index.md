@@ -23,4 +23,4 @@
   - التكامل مع البرامج الأخرى: بالإضافة إلى البرامج المذكورة أعلاه، يمكنك الوصول إلى (DORIS) عبر واجهة برمجة تطبيقات (ICD-API). تتيح هذه الميزة التكامل بسهولة مع الأنظمة والتطبيقات الأخرى.
 > [للمزيد من المعلومات حول إستخدام أداة (DORIS)   بواسطة واجهة برمجة تطبيقات (ICD-API).](doris-api.md)
 
-  ![dorishomepagepicture ](img/DORIShompage24updated.png)
+  ![dorishomepagepicture ](img/DORIShompage24updated2.png)
