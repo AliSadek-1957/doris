@@ -1,28 +1,35 @@
-# Release Notes for Doris Desktop
+# ملاحظات إصدار برنامج (DORIS) لسطح المكتب
 
-## Version 1.1
-- Doris rules version 1.1 is implemented.
-    - **Enhanced Visualization Features**  
-          In addition to the existing **textual output**, the following **three new views** have been introduced:
-              - **Tabular Report**: An interactive view that shows UCOD selection steps in a table format. Users can follow the steps sequentially, with corresponding rules highlighted on the certificate.
-              - **Rule Flow Report**: Displays a visual sequence of the applied rules leading to the selected UCOD.
-              - **Rule Sequence Report**: Presents a horizontal timeline of applied rules, listing them in the order they were triggered.
-    - **Improved Algorithm Accuracy**  
-      This release includes enhancements to the DORIS algorithm, improving accuracy and consistency in cause-of-death coding and reporting.
-              - Refined specificity for infectious diseases, neoplasms, and injury-related conditions.
-              - Improved logic for HIV, tuberculosis, and substance intoxications.
-              - Better handling of external causes and injury-related deaths.
-     - **macOS version now available**  
-      Broadened compatibility for users operating on Apple systems.
+## الإصدار 1.1
+- تم تنفيذ قواعد (DORIS) الإصدار 1.1.
+    - **•	ميزات عرض محسّنة**  
+         بالإضافة إلى **المخرجات النصية** الحالية, تم تقديم **طرق العرض الثلاث** الجديدة التالية :
+              -**تقرير جدولي**: عرض تفاعلي يُظهر خطوات اختيار سبب الوفاة غير المحدد في جدول. يمكن للمستخدمين متابعة الخطوات بالتسلسل، مع تمييز القواعد المقابلة في الشهادة. 
+              - **تقرير تدفق القواعد**: يعرض تسلسلًا مرئيًا للقواعد المطبقة التي أدت إلى سبب الوفاة غير المحدد. 
+              - **تقرير تسلسل القواعد**: يعرض خطًا زمنيًا أفقيًا للقواعد المطبقة، مع سردها بالترتيب الذي تم تفعيلها به.
+    - **•	تحسين دقة الخوارزمية**  
+     يتضمن هذا الإصدار تحسينات على خوارزمية (DORIS)، مما يُحسّن الدقة والاتساق في ترميز سبب الوفاة والإبلاغ عنه.
+       - دقة مُحسّنة للأمراض المعدية والأورام والحالات المرتبطة بالإصابات.
+       - منطق مُحسّن لفيروس نقص المناعة البشرية والسل والتسمم بالمواد المخدرة.
+       - معالجة أفضل للأسباب الخارجية والوفيات المرتبطة بالإصابات.
+     - **•	يتوفر الآن إصدار macOS**  
+     تم توسيع نطاق التوافق مع مستخدمي أنظمة (Apple).
        
 
-## Version 1.0 (Initial version)
+## الإصدار 1.0 (الإصدار الأول)
 
--	Textual certificate support added. It can efficiently process a substantial volume of data, handling thousands of text-filled certificates in just few minutes. With this update, users can expect fast results, including corresponding ICD-11 codes, entity titles, and the computed UCOD.
--	Significant efforts were dedicated to enhance the user interface of the web version. The improvements aim to provide a more intuitive and user-friendly experience, allowing users to navigate through individual certificates with ease and save the processed certificates on local computers. 
--	The analysis capabilities of DORIS were expanded by incorporating fields from frame B, such as manner of death, pregnancy and other. By considering these additional fields, DORIS can now perform more comprehensive and accurate analyses, resulting in higher-quality UCOD selection.
--	Additional control checks and warnings were introduced. These new features serve to increase the accuracy and reliability of the results.
--	AN ANACOD-3 compatible output was introduced as an additional output option from DORIS. This update ensures easier integration with other systems and workflows, enhancing the overall efficiency of data processes.
--	The digital mortality rule base has undergone substantial improvements and clarifications based on the invaluable feedback received during MRD workshops. These enhancements further optimize the performance and reliability of DORIS.
--	The DORIS  online user guide is now available.
--   The rules that are used by the tool are now maintained by using our Mortality Rules Authoring platform.
+تمت إضافة دعم الشهادات النصية. يُمكنه معالجة كميات كبيرة من البيانات بكفاءة عالية، حيث يتعامل مع آلاف الشهادات النصية في غضون دقائق معدودة. مع هذا التحديث، سيحصل المستخدمون على نتائج سريعة، بما في ذلك رموز (ICD-11) المناظرة، وعناوين الكيانات، والسبب الرئيسي للوفاة المحسوب (UCOD).
+•	بُذلت جهود كبيرة لتحسين واجهة المستخدم لإصدار الويب. تهدف التحسينات إلى توفير تجربة استخدام أكثر سهولة وبديهية، مما يسمح للمستخدمين بالتنقل بين الشهادات الفردية بسهولة وحفظ الشهادات المُعالجة على أجهزة الكمبيوتر المحلية.
+
+•	تم توسيع إمكانيات تحليل (DORIS) من خلال دمج حقول من الإطار B، مثل طريقة الوفاة والحمل وغيرها. من خلال مراعاة هذه الحقول الإضافية، يُمكن لـ (DORIS) الآن إجراء تحليلات أكثر شمولية ودقة، مما يؤدي إلى اختيار السبب الرئيسي للوفاة (UCOD) بجودة أعلى.
+
+•	تمت إضافة تدقيقات وتحذيرات تحكم إضافية. تساهم هذه الميزات الجديدة في زيادة دقة وموثوقية النتائج.
+
+•	أُضيف خيار إخراج متوافق مع معيار (ANACOD-3) إلى نظام (DORIS). يضمن هذا التحديث سهولة التكامل مع الأنظمة الأخرى وسير العمل، مما يُحسّن كفاءة معالجة البيانات بشكل عام.
+
+•	خضعت قاعدة قواعد الوفيات الرقمية لتحسينات وتوضيحات جوهرية بناءً على الملاحظات القيّمة التي تم تلقيها خلال ورش عمل . تُسهم (MRD) هذه التحسينات في تعزيز أداء نظام (DORIS) وموثوقيته.
+
+•	يتوفر الآن دليل مستخدم (DORIS) الإلكتروني.
+
+•	تُدار القواعد التي يستخدمها النظام حاليًا عبر منصة تأليف قواعد الوفيات الخاصة بالمنظمة.
+
