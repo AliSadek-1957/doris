@@ -7,142 +7,141 @@
 
 يمكنك دائمًا تصدير الشهادات من مجموعة بيانات (DORIS) إلى التنسيقات المدعومة.
 
-## Importing Data
-You may import certificates using one of the supported file formats. Details of the formats and sample files are available at the links below:
+## استيراد البيانات
+يمكنك استيراد الشهادات باستخدام أحد تنسيقات الملفات المدعومة. تتوفر تفاصيل التنسيقات وملفات نموذجية في الروابط أدناه:
 
-- Detailed description of the [Tabular format for Excel and CSV files](csv-excel-format.md)
+- وصف تفصيلي لتنسيق  [الجدول لملفات Excel وCSV](csv-excel-format.md)
 
-- Detailed description of the [Standard JSON format](json-format.md)
+- وصف تفصيلي لتنسيق  [JSON القياسي](json-format.md)
 
 ![Import menu](img/menu-import.png){: style="width:40%"}
 
-To import from a file, choose `Import from .xlsx, .csv or .json Files` menu item under the `Data` menu. After that, you need to pick the file that you'd like to import. Then the tool will ask you for a file name for the `DORIS dataset` that will be created. By default, the Doris datasets are created under the Documents folder in Windows. 
+لاستيراد البيانات من ملف، اختر "استيراد من ملفات .xlsx أو .csv أو .json" من قائمة "البيانات". بعد ذلك، حدد الملف الذي ترغب في استيراده. سيطلب منك البرنامج بعد ذلك اسم ملف مجموعة بيانات (DORIS) التي سيتم إنشاؤها. بشكل افتراضي، يتم إنشاء مجموعات بيانات (DORIS) في مجلد "المستندات" في نظام Windows.
 
-![Dataset name dialog](img/dataset-filename.png){: style="width:50%"}
+![مربع حوار اسم مجموعة البيانات](img/dataset-filename.png){: style="width:50%"}
 
-After giving a file name and clicking `OK`, DORIS will import the file and will show you the contents. The system will show a progress bar at the bottom of the screen if it's a large file that takes time to import.
+بعد إدخال اسم الملف والنقر على "موافق"، سيقوم برنامج (DORIS) باستيراد الملف وعرض محتوياته. سيعرض النظام شريط تقدم أسفل الشاشة إذا كان الملف كبيرًا ويستغرق استيراده وقتًا.
 
-## Working with DORIS Dataset
-DORIS Desktop works with DORIS datasets which are created after you import data using a supported file format. By default, the Doris datasets are created under the Documents folder in Windows. This can be changed from the `Settings`/`Change Default Dataset Folder` menu.
+## العمل مع مجموعات بيانات (DORIS)
+يعمل برنامج (DORIS Desktop) مع مجموعات بيانات (DORIS) التي يتم إنشاؤها بعد استيراد البيانات باستخدام تنسيق ملف مدعوم. بشكل افتراضي، يتم إنشاء مجموعات بيانات (DORIS) ضمن مجلد "المستندات" في نظام (Windows). يمكن تغيير هذا من قائمة "الإعدادات/تغيير مجلد مجموعة البيانات الافتراضي".
 
 
-### Opening a Dataset
-You could open an existing DORIS dataset using the `Data`/`Open Doris Dataset` menu
+### فتح مجموعة بيانات
+يمكنك فتح مجموعة بيانات (DORIS) موجودة باستخدام قائمة "البيانات/فتح مجموعة بيانات (DORIS)".
 
-![Open Dataset](img/dataset-open.png){: style="width:30%"}
+![فتح مجموعة بيانات](img/dataset-open.png){: style="width:30%"}
 
-### Dataset Information
-Once a dataset is open, you may use the Dataset Information button or `Data`/`Dataset Information` menu to see information on the dataset.
+### معلومات مجموعة البيانات
+بمجرد فتح مجموعة البيانات، يمكنك استخدام زر "معلومات مجموعة البيانات" أو قائمة "البيانات/معلومات مجموعة البيانات" لعرض معلومات حول مجموعة البيانات.
 ![Dataset Information](img/dataset-info.png){: style="width:50%"}
 
-This information contains the number of certificates, whether the data contains coded or textual data, whether the data is processed, and various other information on the dataset. You may see a sample below
+تتضمن هذه المعلومات عدد الشهادات، وما إذا كانت البيانات تحتوي على بيانات مشفرة أو نصية، وما إذا كانت البيانات مُعالجة، ومعلومات أخرى متنوعة حول مجموعة البيانات. يمكنك الاطلاع على مثال أدناه.
 
-![Dataset Information2](img/dataset-info2.png){: style="width:60%"}
+![معلومات مجموعة البيانات 2](img/dataset-info2.png){: style="width:60%"}
 
 
-### Working with certificates that use textual data
-If the imported data does not contain codes but textual conditions, then the tool will add codes using text-to-code processing during the importing phase. This process places the auto-assigned codes in the `Code(auto)` column in the tool together with an additional column `Match` that shows the quality of the text-to-code matching process.
+### العمل مع الشهادات التي تستخدم بيانات نصية
+إذا كانت البيانات المستوردة لا تحتوي على رموز، بل على شروط نصية، فسيضيف البرنامج الرموز باستخدام معالجة تحويل النص إلى رمز أثناء مرحلة الاستيراد. تضع هذه العملية الرموز المُخصصة تلقائيًا في عمود "الرمز (تلقائي)" في الأداة، بالإضافة إلى عمود "المطابقة" الذي يُظهر جودة عملية تحويل النص إلى رمز.
 
-We suggest that automatic text to code conversions are checked by experts especially when the match is not a `GoodMatch` 
+نقترح أن يقوم خبراء بمراجعة عمليات التحويل التلقائي للنص إلى رمز، خاصةً عندما لا تكون المطابقة جيدة.
 ![Text to code columns](img/texttocode-columns.png){: style="width:60%"}
 
-Text-to-code conversion issues button can be used to easily filter out the cases that contain text-to-code processing with non-GoodMatch results.
+يُمكن استخدام زر "مشاكل تحويل النص إلى رمز" لتصفية الحالات التي تحتوي على نتائج غير جيدة.
 ![Text to code issues button](img/texttocode-issues-button.png){: style="width:20%"}
 
-### Processing the Dataset (Underlying Cause of Death Detection)
+### معالجة مجموعة البيانات (الكشف عن السبب الرئيسي للوفاة):
 
-Processing the file will compute the underlying cause of death for each certificate. This is done by using the menu `Process`
+ستقوم معالجة الملف بحساب السبب الرئيسي للوفاة لكل شهادة. يتم ذلك باستخدام قائمة "معالجة".
 ![Process menu](img/process-menu.png){: style="width:40%"}
 
-If it's a large dataset, the system will display a progress bar at the bottom of the screen to show the progress.
+في حال كانت مجموعة البيانات كبيرة، سيعرض النظام شريط تقدم أسفل الشاشة لتوضيح التقدم.
 
-Once the processing is finished, the results are in the `Underlying Cause of Death (UCOD)` column. If the underlying cause of death is a postcoordination combination it is placed in the `UCOD with postcoordination information` column. Rejected certificates are marked in the `Reject` column and Errors and Warnings are placed in the `Error` and `Warnings` columns.
+بمجرد انتهاء المعالجة، ستظهر النتائج في عمود "السبب الرئيسي للوفاة". إذا كان السبب الرئيسي للوفاة ناتجًا عن عملية تنسيق لاحقة، يُدرج في عمود "السبب الرئيسي للوفاة مع معلومات التنسيق اللاحق". تُعلّم الشهادات المرفوضة في عمود "الرفض"، وتُدرج الأخطاء والتحذيرات في عمودي "الأخطاء والتحذيرات".
 
-![UCOD columns](img/ucod-columns.png){: style="width:80%"}
+![أعمدة "السبب الرئيسي للوفاة"](img/ucod-columns.png){: style="width:80%"}
 
- Certificates that are rejected or have other problems can be easily filtered out by using the Processing Issues button.
+ يمكن تصفية الشهادات المرفوضة أو التي بها مشاكل أخرى بسهولة باستخدام زر "معالجة المشكلات".
 ![Processing issues button](img/processing-issues-button.png){: style="width:20%"}  
 
-### Filtering and Sorting
-It is possible to sort the certificates by the values of a selected column by clicking on the column label. 
+### التصفية والفرز
+يمكن فرز الشهادات حسب قيم عمود محدد بالنقر على اسم العمود.
 
-Similarly, filtering is possible by using the filter icons located near the column labels.
+كما يمكن التصفية باستخدام أيقونات التصفية الموجودة بجوار أسماء الأعمدة.
 ![Filtering](img/filter.png){: style="width:30%"}
 
-### Editing Individual Certificates
+### تعديل الشهادات الفردية
 
-Clicking the number in the `Id` column opens the certificate in full-view mode.
+يؤدي النقر على الرقم في عمود "المعرف" إلى فتح الشهادة في وضع العرض الكامل.
 ![Open certificate](img/open-cert.png){: style="width:80px"}
 
-In full-view mode, all information in the certificate as well as the computed underlying cause of death is shown to the user
+في وضع العرض الكامل، تُعرض جميع المعلومات الموجودة في الشهادة، بالإضافة إلى السبب الرئيسي للوفاة المحسوب، للمستخدم.
 ![Certificate full-view](img/cert-fullview.png){: style="width:80%"}
 
-When opened, the system will not allow editing the certificate. To edit it you need to click the unlock button at the bottom.
+عند فتح الشهادة، لن يسمح النظام بتعديلها. لتحرير الشهادة، انقر على زر فتح القفل في الأسفل.
 ![unlock icon](img/unlock.png){: style="width:30px"}
 
-Once unlocked, you can edit the certificate. Condition lines accept only valid ICD-11 Codes. Editing textual diagnosis is not possible however you could overwrite the textual diagnosis by providing code(s)
+بعد فتح القفل، يمكنك تعديل الشهادة. تقبل خانات الشروط رموز ICD-11 الصحيحة فقط. لا يُمكن تعديل التشخيص النصي، ولكن يُمكنك استبداله بإدخال رمز أو أكثر.
 
-Once editing is complete, you may save it by clicking the `Save` button, If not saved, the tool will ignore the changes made after closing the full view.
+بعد الانتهاء من التعديل، يُمكنك حفظ التغييرات بالنقر على زر "حفظ". في حال عدم الحفظ، سيتجاهل البرنامج التغييرات بعد إغلاق وضع العرض الكامل.
 
-Closing full-view mode is done by clicking the `X` at the top left corner.
+لإغلاق وضع العرض الكامل، انقر على علامة X في الزاوية العلوية اليسرى.
 
-`Process` button in the full-view will reprocess the certificate to find the underlying cause of death. This is saved only after `Save` is pressed. 
+يُعيد زر "معالجة" في وضع العرض الكامل معالجة الشهادة لتحديد السبب الرئيسي للوفاة. يتم حفظ هذه العملية فقط بعد الضغط على زر "حفظ".
 
-It is also possible to process all edited certificates by using the `Process` menu after closing the full view.
+كما يُمكنك معالجة جميع الشهادات المُعدّلة باستخدام قائمة "معالجة" بعد إغلاق وضع العرض الكامل.
 
-### Report vizualisation for Individual Certificates
+### عرض التقارير للشهادات الفردية
 
-The DORIS tool provides four complementary visualization modes to support review, validation, and training:
+توفر أداة (DORIS) أربعة أنماط عرض متكاملة لدعم المراجعة والتحقق والتدريب:
 
-**Textual Report**: This visualization illustrates the steps and mortality rules that were applied in the selection of the underlying cause of death. The report includes a **warnings** field, which flags any inconsistencies in the reported information or suggests the need for manual verification. The warnings are displayed in yellow. Following the warnings, a concise report outlines the main steps that were applied. For a more detailed understanding, a full report is also included in the output section. This comprehensive report provides a thorough explanation of the sequence followed, along with detailed information about the mortality rules and steps that were applied or not during the selection of the underlying cause of death.
+**التقرير النصي**: يوضح هذا العرض الخطوات وقواعد الوفيات التي طُبقت في تحديد السبب الرئيسي للوفاة. يتضمن التقرير خانة **تنبيهات** تُشير إلى أي تناقضات في المعلومات المُبلغ عنها أو تُشير إلى الحاجة إلى التحقق اليدوي. تظهر التنبيهات باللون الأصفر. يلي التنبيهات تقرير موجز يُلخص الخطوات الرئيسية المُطبقة. لفهم أكثر تفصيلًا، يتضمن قسم المخرجات تقريرًا كاملًا. يُقدم هذا التقرير الشامل شرحًا وافيًا للتسلسل المُتبع، بالإضافة إلى معلومات تفصيلية حول قواعد الوفيات والخطوات التي طُبقت أو لم تُطبق أثناء تحديد السبب الرئيسي للوفاة.
 
-![Textualreport](img/textualreportdesktop.png){: style="width:40%"}
+![التقرير النصي](img/textualreportdesktop.png){: style="width:40%"}
 
-**Tabular Report:** This interactive visualization displays the steps for UCOD selection in a tabular format. Clicking on the rows allows to follow the steps one after the other from top to bottom and accordingly the rules applied will be highlighted on the certificate
+**التقرير الجدولي**: يعرض هذا العرض التفاعلي خطوات تحديد السبب الرئيسي للوفاة في شكل جدولي. بالنقر على الصفوف، يمكنك تتبع الخطوات واحدة تلو الأخرى من الأعلى إلى الأسفل، وسيتم تمييز القواعد المطبقة على الشهادة وفقًا لذلك.
 
-![Tabularreport](img/tabularreportdesktop.png){: style="width:40%"}
+![تقرير جدولي](img/tabularreportdesktop.png){: style="width:40%"}
 
-**Rule Flow Report:**  This visualization displays the report as a sequence of applied rules ultimately leading to the selected UCOD.
+**تقرير تدفق القواعد**: يعرض هذا التقرير كسلسلة من القواعد المطبقة التي تؤدي في النهاية إلى (UCOD) المحدد.
 
-![Ruleflowreport](img/Ruleflowreportdesktop.png){: style="width:40%"}
+![تدفق القواعد ](img/Ruleflowreportdesktop.png){: style="width:40%"}
 
-**Rule Sequence Report:** This visualization displays the report as a horizontal sequence. The specific rules applied at each step are listed below showing the order in which the rules were applied from top to bottom.
+**تقرير تسلسل القواعد**: يعرض هذا الرسم البياني التقرير كسلسلة أفقية. تُدرج أدناه القواعد المُطبقة في كل خطوة، مع توضيح ترتيب تطبيقها من الأعلى إلى الأسفل
 
-![Rulesequencereport](img/Rulesequencereportdesktop.png){: style="width:40%"}
+![تقرير تسلسل القواعدt](img/Rulesequencereportdesktop.png){: style="width:40%"}
 
-## Settings
-### Changing Language
-Changing the language of the tool is possible by clicking the `Settings`/`Change Language` menu. Once clicked, the system will show the available languages in a new dialog.
+## الإعدادات
+### تغيير اللغة
+يمكنك تغيير لغة الأداة بالنقر على قائمة "الإعدادات/تغيير اللغة". بعد النقر، سيعرض النظام اللغات المتاحة في نافذة جديدة. تظهر اللغة الحالية باللون البرتقالي، وبالنقر على لغة أخرى يتم تغييرها.
 ![Change Language](img/Changingthelanguage2025.png){: style="width:50%"} 
 The current language is shown in orange color and clicking on another language changes the language.
 
-** IMPORTANT! ** Changing the language requires an Internet connection if the language that is selected has not been used before as the system needs to download the ICD in that language to enable text-to-code processing.
+**هام!** يتطلب تغيير اللغة اتصالاً بالإنترنت إذا لم تكن اللغة المُختارة مُستخدمة من قبل، حيث يحتاج النظام إلى تنزيل رمز (ICD) بتلك اللغة لتمكين معالجة النص إلى رمز.
 
-The system uses the language that is selected for 3 separate things:
-- The user interface of the tool switches to the selected language.
-- During import, if the certificates have textual diagnoses the language selected is used during the text-to-code processing.
-- During processing for underlying cause of death detection, the warning messages are provided in the selected language.
+يستخدم النظام اللغة المُختارة لثلاثة أغراض:
+- تغيير واجهة المستخدم للأداة إلى اللغة المُختارة. 
+- أثناء الاستيراد، إذا كانت الشهادات تحتوي على تشخيصات نصية، فسيتم استخدام اللغة المختارة أثناء معالجة تحويل النص إلى رمز.
+- أثناء معالجة الكشف عن السبب الرئيسي للوفاة، يتم عرض رسائل التحذير باللغة المختارة.
 
-** IMPORTANT! **  Changing the language is possible only before opening a database. When switching languages please close the application and retry before opening a database
+**هام!** لا يمكن تغيير اللغة إلا قبل فتح قاعدة البيانات. عند تغيير اللغة، يُرجى إغلاق التطبيق وإعادة المحاولة قبل فتح قاعدة البيانات.
 
-### Changing ICD-11 Version
-By default, DORIS Desktop uses the latest released version of ICD-11.
+### تغيير إصدار ICD-11
+يستخدم برنامج (DORIS Desktop) افتراضيًا أحدث إصدار من (ICD-11).
 
-It is possible to use another version of ICD-11 during the processing of the certificates. This is done using the `Settings`/`Change ICD Version` menu.
+يمكن استخدام إصدار آخر من (ICD-11) أثناء معالجة الشهادات. يتم ذلك من خلال قائمة الإعدادات/تغيير إصدار (ICD).
 
-2023 and 2024 versions of ICD-11 are supported by DORIS.
+يدعم برنامج (DORIS) إصداري 2023 و2024 من تصنيف (ICD-11).
 
-IMPORTANT! Changing the ICD version requires an Internet connection if the version that is selected has not been used before as the system needs to download that version of ICD.
+هام! يتطلب تغيير إصدار (ICD) اتصالاً بالإنترنت إذا لم يتم استخدام الإصدار المحدد من قبل، حيث يحتاج النظام إلى تنزيل هذا الإصدار من (ICD).
 
 
-### Changing the default Doris dataset folder
-By default, the Doris datasets are created under the Documents folder in Windows. You may change this default folder from the `Settings`/`Change Default Dataset Folder` menu
+### تغيير مجلد مجموعة بيانات (DORIS) الافتراضي
+يتم إنشاء مجموعات بيانات (DORIS) افتراضيًا في مجلد "المستندات" في نظام ويندوز. يمكنك تغيير هذا المجلد الافتراضي من قائمة "الإعدادات/تغيير مجلد مجموعة البيانات الافتراضي".
 
-## Exporting Data
-Exporting data in the supported formats is possible using the `Data`/`Export xxxx` menu items
+## تصدير البيانات
+يمكنك تصدير البيانات بالتنسيقات المدعومة باستخدام قائمة "البيانات/تصدير xxxx".
 ![Export](img/export.png){: style="width:20%"}
+سيطلب منك النظام تحديد مكان حفظ الملف واسمه.
 
-The system then asks you where to save the file as well as the file name.
-
-After you export the ANACOD output, you need to fill in the columns with the national or local information on the population, the year, the ISO country code, etc. before you import in ANACoD-3 tool. 
-[More information on ANACOD-3](icd.who.int/anacod)
+بعد تصدير مخرجات (ANACOD)، ستحتاج إلى ملء الأعمدة بالمعلومات الوطنية أو المحلية المتعلقة بالسكان، والسنة، ورمز الدولة وفقًا لمعيار ISO، وما إلى ذلك، قبل استيرادها إلى أداة (ANACOD-3). 
+[ولمزيد من المعلومات حول (ANACOD-3)، راجع الرابط](icd.who.int/anacod)
